@@ -1,0 +1,19 @@
+[project]
+name = "ev-comparison"
+version = "0.1.0"
+description = "Vehicle listing aggregation from multiple APIs with MongoDB storage"
+requires-python = ">=3.11"
+dependencies = [
+    "requests",
+    "python-dotenv",
+    "pymongo",
+    "pydantic",
+    "xgboost",
+    "scikit-learn",
+    "pandas",
+    "matplotlib",
+    "numpy",
+]
+
+[project.scripts]
+ev-search = "src.main:main"
